@@ -1,19 +1,19 @@
 # Create
 # Program make a simple calculator
 
-# This function adds two numbers
+# This function adds three numbers
 def add(x, y):
-    return x + y
+    return x - y
 
-# This function subtracts two numbers
+# This function subtract two numbers
 def subtract(x, y):
     return x - y
 
-# This function multiplies two numbers
-def multiply(x, y):
+# This function multiplies three numbers
+def multiply(x, z):
     return x * y
 
-# This function divides two numbers
+# This function  two numbers
 def divide(x, y):
     return x / y
 
@@ -26,10 +26,10 @@ print("4.Divide")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(8/2/3/5): ")
 
     # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '5', '3', '9'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -43,7 +43,7 @@ while True:
             print(num1, "*", num2, "=", multiply(num1, num2))
 
         elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+            print(num1, "/", num2, "=", divide(num5, num2))
         
         # check if user wants another calculation
         # break the while loop if answer is no
